@@ -1,0 +1,249 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* Inicio estilo body */
+body { 
+    background-color: rgb(34, 33, 54);
+}
+/* Fin estilo body */
+
+/* Inicio estilo Links redes sociales */
+.redesSociales {
+    position: sticky;
+    top: 0px;
+    grid-area: esp0;
+}
+/* Fin estilo Links redes sociales */
+
+/* Inicio estilo Título */
+.responsive #grid .tituloPagina {
+    grid-area: img;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    border: 1px solid rgb(53, 92, 126);
+    background-color: black;
+    color: beige;
+}
+#logo {
+    grid-area: logo;
+    width: 100%;
+    height: auto;
+}
+#logo img{
+    display: flex;
+    margin: auto;
+}
+/* Fin estilo Título */
+
+/* Inicio estilo Imagen de Index */
+#imagen {
+    width: 100%;
+    height: auto;
+    grid-area: img;
+}
+#imagen img{
+    width: 100%;
+    display: flex;
+    margin-top: -10px;
+}
+/* Fin estilo Imagen de Index */
+
+/* Inicio estilo Menú de navegación */
+nav {
+    grid-area: nav;
+}
+#list {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 20px;
+    text-align: center;
+    padding: initial;
+    margin-top: 0%;
+    position: relative;
+    justify-content: center;
+    z-index: 5;
+    display: flex;
+}
+#list li{
+    display: inline;
+    padding-left: 5px;
+    padding-right: 2px;
+    border-radius: 10px;
+    margin-left: 5px;
+    margin-right: 5px;
+ }
+ #list li a:hover{
+    background-color: rgb(63, 62, 62);
+    color: antiquewhite;
+    margin-right: 3px;
+    border-radius: 10px;
+ }
+.separador {
+    border-right: solid 5px rgb(53, 92, 126);
+    border-left: solid 5px rgb(53, 92, 126);
+    border-top: solid 0.5px rgb(53, 92, 126);
+    border-bottom: solid 0.5px rgb(53, 92, 126);
+    background-color: black;
+}
+a {    text-decoration: none;
+    color: rgb(53, 92, 126);
+}
+/* Fin estilo Menú de navegación */
+
+/* Inicio Propiedades Grid */
+#grid {
+    display: grid;
+    justify-content: space-between;
+    grid-template-areas: 
+    "esp0 esp0 esp0"
+    "logo logo logo"
+    "nav nav nav"
+    "img img img"
+    "esp esp esp"
+    "esp1 esp7 esp3"
+    "esp2 esp4 esp3"
+    "esp5 esp5 esp3";
+}
+/* Fin Propiedades Grid */
+
+/* Inicio estilo Index */
+.bienvenidos {
+    font-family: 'Koulen', cursive;
+    -webkit-text-stroke: 1px lightcyan;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    font-size: 100px;
+    grid-area: esp;
+}
+.drum {
+    display: flex;
+    justify-content: center;
+    height: 130px;
+    grid-area: esp1;
+}
+.guitar {
+    display: flex;
+    justify-content: center; 
+    height: 100px;
+    grid-area: esp2;
+}
+.ampli {
+    display: flex;
+    justify-content: center;
+    height: 130px;
+    grid-area: esp7;
+}
+.bass {
+    display: flex;
+    grid-area: esp4;
+    justify-content: center;
+    height: 100px;
+}
+.banner {
+    display: flex;
+    grid-area: esp3;
+    justify-content: center;
+}
+.vid {
+    grid-area: esp5;
+    display: flex;
+    text-align: end;
+    justify-content: center;
+}
+/* Fin estilo Index */
+
+
+/* Inicio estilos Footer */
+.pie {
+    text-align: center;
+    padding: 40px 0 40px;
+    background-color: #060A24;
+    color: rgb(46, 70, 134);
+    height: 100%;
+}
+/* Fin estilos Footer */
+
+/* Inicio estilo página Bandas */
+.Bandas {
+    grid-area: esp;;
+    padding: 25px;
+    display: flex;
+    gap: 15px;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+.bands {
+    background-color: black;
+    width: 300px;
+    height: auto;
+    border: 4px solid black;
+}
+/* Fin estilo página Bandas */
+
+/* Inicio estilo página Agenda */
+.agenda {
+    grid-area: esp;
+    position: relative; padding-bottom: 75%; height: 0; overflow: hidden;
+}    
+.agenda iframe {
+    position: absolute; top:0; left: 0; width: 100%; height: 100%;
+}
+/* Fin estilo página Agenda */
+
+/* Inicio estilo página Merchandising */
+#merch {
+    display: flex;
+    gap: 15px;
+    margin: 35px;
+    justify-content: space-around;
+    flex-flow: row wrap;
+    color: antiquewhite;
+}
+/* Fin estilo página Merchandising */
+
+/* Inicio estilo página Descargas */
+.responsive #grid #descargas {
+    grid-area: esp;
+    padding: 20px;
+    display: flex;
+    gap: 10px;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: stretch;
+}
+.asphix, .mensaka, .annabelle {
+    justify-content: center;
+    background-color: black;
+    color: antiquewhite;
+    border: 2px solid black;
+    width: 185px;
+    height: auto;
+}
+.asphix p, .mensaka p, .annabelle p {
+    padding: 5px;
+}
+/* Fin estilo página Descargas */
+
+/* Inicio estilo página Contacto */
+#contacto {
+    background-color: darkgray;
+    text-align: center;
+    grid-area: esp;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+/* Fin estilo página Contacto */
+
+
+
+
+
+
+
+
+
+

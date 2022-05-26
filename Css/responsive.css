@@ -1,0 +1,174 @@
+/* Inicio Responsive Mobile */
+@media (min-width: 0px) and (max-width: 550px)
+{ 
+    #grid {
+        grid-template-areas: 
+        "esp0 esp0 esp0"
+        "logo logo logo"
+        "nav nav nav"
+        "img img img"
+        "esp esp esp"
+        "esp5 esp5 esp5";
+    }
+    .responsive #grid .drum {
+        display: none;
+    }
+    .responsive #grid .guitar {
+        display:none
+    }
+    .responsive #grid .bass {
+        display: none;
+    }
+    .responsive #grid .ampli {
+        display: none;
+    }
+    .responsive #grid .banner {
+        display: none;
+    }
+  
+    .responsive #grid .menu input {
+        z-index: 8;
+        opacity: 0;
+    }
+    .responsive #grid .menu input,
+    .responsive #grid .menu .icon-open,
+    .responsive #grid .menu .icon-close {
+            position: absolute;
+            top: 15px;
+            right: 16px;
+        }
+    .responsive #grid .menu input ~ .icon-close,
+    .responsive #grid .menu input:checked + .icon-open {
+        display: none;
+        }
+    .responsive #grid .menu input:checked ~ .icon-close {
+            display: block;
+        }
+    .responsive #grid .menu ul {
+            visibility: hidden;
+            flex-direction: column;
+            justify-content: space-evenly;
+            background: grey;
+            min-height: 224px;
+            width: 100%;
+            position: absolute;
+            left: 0;
+            padding: 0 16px;
+            transition: all 0.5s ease-out;
+            -webkit-transition: all 0.5s ease-out;
+            -moz-transition: all 0.5s ease-out;
+            top: 44px;
+            left: -767px;
+        }
+    .responsive #grid .menu .list .separador a {
+            font-family: 'IBM Plex Sans', sans-serif;
+            color: #060A24;
+        }
+    .responsive #grid .menu .list .separador a:hover {
+            color: #00F3BB;
+        }
+    .responsive #grid .menu .list .separador a:active, a:visited {
+            color: rgba(6,10,36,0.56);
+            text-decoration: line-through;
+        }
+    .responsive #grid .menu input:checked ~ ul {
+            visibility: visible;
+            top: 44px;
+            left: 0;
+        }
+    html {
+            scroll-behavior: smooth;
+        } 
+    a.button {
+            font-size: 16px;
+            font-weight: 500;
+            letter-spacing: 0;
+            line-height: 22px;
+            text-transform: uppercase;
+            color: #060A24;
+            background: #00F3BB;
+            display: flex;
+            min-height: 48px;
+            align-items: center;
+            justify-content: center;
+        }
+    a.button:hover {
+            color: rebeccapurple;
+            background-image: linear-gradient(225deg, #0000FE 0%, #00F0B8 100%);
+            background-image: -webkit-linear-gradient(225deg, #0000FE 0%, #00F0B8 100%);
+            background-image: -moz-linear-gradient(225deg, #0000FE 0%, #00F0B8 100%);
+        }
+    .responsive #grid .menu .list {
+            display: flex;
+        }
+    .responsive #grid .menu .separador a {
+            font-size: 16px;
+            letter-spacing: 0;
+            line-height: 28px;
+            color: #FFFFFF;
+            text-transform: uppercase;
+            font-weight: 300;
+            display: block;
+        }
+    .responsive #grid .menu .separador a:hover {
+            color: rgb(53, 92, 126);
+        }
+    .responsive #grid .menu input#menu-mobile {
+            color: #fff;
+        }
+    .responsive #grid .menu i {
+            color: #fff;
+        }
+    }
+    footer.pie h4 a{
+        color: rgb(53, 70, 146);
+    }
+/* Fin Responsive Mobile */
+
+
+/* Inicio Responsive Tablet */   
+@media (min-width: 551px) and (max-width: 768px){
+    #grid {
+        grid-template-areas: 
+        "esp0 esp0 esp0"
+        "logo logo logo"
+        "nav nav nav"
+        "img img img"
+        "esp esp esp"
+        "esp5 esp5 esp5";
+    }
+    .responsive #grid .drum {
+        display: none;
+    }
+    .responsive #grid .guitar {
+        display:none
+    }
+    .responsive #grid .bass {
+        display: none;
+    }
+    .responsive #grid .ampli {
+        display: none;
+    }
+    .responsive #grid .banner {
+        display: none;
+    }
+    .responsive #grid .menu input#menu-mobile {
+        display: none;
+    }
+    .responsive #grid .menu i {
+        display: none;
+    }
+}
+/* Fin Responsive Tablet */
+
+/* Inicio Responsive Desktop */
+@media screen and (min-width: 769px){
+        .responsive #grid .menu input#menu-mobile {
+            display: none;
+        }
+        .responsive #grid .menu i {
+            display: none;
+        }
+} 
+/* Fin Responsive Desktop */
+
